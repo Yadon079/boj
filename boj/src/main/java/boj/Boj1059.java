@@ -14,6 +14,9 @@ public class Boj1059 {
         Arrays.sort(arr);
 
         int n = sc.nextInt();
+
+        sc.close();
+
         // 집합 s에 포함된 모든 정수는 1보다 크고 1000보다 작다.
         int start = 1;
         int end = 1000;
@@ -39,5 +42,6 @@ public class Boj1059 {
         }
 
         System.out.println(cnt);
+
     }
 }

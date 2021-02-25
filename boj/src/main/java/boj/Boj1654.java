@@ -15,6 +15,7 @@ public class Boj1654 {
             arr[i] = sc.nextInt();
         }
 
+        sc.close();
         Arrays.sort(arr);
 
         long max = arr[k - 1]; // 제일 긴 랜선
