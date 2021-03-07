@@ -63,7 +63,7 @@ public class Boj1966 {
         }
 
         System.out.println(sb);
-
+        sc.close();
     }
 
 }

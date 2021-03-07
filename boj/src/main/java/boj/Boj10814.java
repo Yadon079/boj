@@ -8,7 +8,7 @@ public class Boj10814 {
 
         int n = sc.nextInt();
         
-
+        sc.close();
         for(int i = 0; i < )
     }
 }

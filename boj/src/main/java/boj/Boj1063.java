@@ -9,6 +9,7 @@ public class Boj1063 {
         String stone = sc.next();
         int n = sc.nextInt();
 
+        sc.close();
         
     }
 }
