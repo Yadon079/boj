@@ -1,10 +1,21 @@
 package boj;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class Boj10816 {
-    
+
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        HashMap<Integer, Integer> num = new HashMap<>();
+
+        int n = 
+    }
+
+    /*
+    * 시간초과
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -38,7 +49,9 @@ public class Boj10816 {
         for(int i = 0; i < cnt.length; i++) {
             System.out.print(cnt[i] + " ");
         }
+        
 
     }
+    */
 
 }
