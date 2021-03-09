@@ -17,6 +17,7 @@ public class Boj10816 {
         int n = Integer.parseInt(br.readLine());
         StringTokenizer st = new StringTokenizer(br.readLine());
 
+        // map에 해당 key가 존재하면 key의 value를 1증가, 없으면 map에 추가
         for(int i = 0; i < n; i++) {
             int card = Integer.parseInt(st.nextToken());
             
@@ -30,6 +31,7 @@ public class Boj10816 {
         int m = Integer.parseInt(br.readLine());
         st = new StringTokenizer(br.readLine());
 
+        // map에 존재하는 key면 value를 sb에 추가, 존재하지 않으면 0을 추가
         for(int i = 0; i < m; i++) {
             int num = Integer.parseInt(st.nextToken());
 
