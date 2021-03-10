@@ -20,6 +20,8 @@ public class Boj11050 {
         int n = sc.nextInt();
         int k = sc.nextInt();
 
+        sc.close();
+        
         int bi = (factorial(n)) / (factorial(n - k) * factorial(k));
         
         System.out.println(bi);

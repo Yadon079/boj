@@ -17,6 +17,7 @@ public class Boj11650 {
             arr[i][1] = sc.nextInt();
         }
 
+        sc.close();
         Arrays.sort(arr, new Comparator<int[]>() {
             
             @Override
