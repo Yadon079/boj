@@ -1,4 +1,4 @@
-package boj;
+package boj.solved;
 
 import java.util.Arrays;
 import java.util.Comparator;

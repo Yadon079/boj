@@ -1,4 +1,4 @@
-package boj;
+package boj.solved;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

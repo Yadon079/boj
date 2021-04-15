@@ -36,6 +36,8 @@ public class Boj1107 {
         }
 
         System.out.println(count);
+
+        sc.close();
     }
 
 }

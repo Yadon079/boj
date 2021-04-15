@@ -1,11 +1,8 @@
-package boj;
+package boj.solved;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
 import java.util.StringTokenizer;
 
 public class Boj18111 {
@@ -13,7 +10,6 @@ public class Boj18111 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
-        HashSet<Integer> hs = new HashSet<>();
 
         int n = Integer.parseInt(st.nextToken());
         int m = Integer.parseInt(st.nextToken());
@@ -24,9 +20,6 @@ public class Boj18111 {
         int[][] map = new int[n][m];
         int max = -1;
         int min = T;
-
-        HashMap<Integer, Integer> hm = new HashMap<>();
-        ArrayList<Integer> al = new ArrayList<>();
 
         for(int i = 0; i < n; i++) {
             st = new StringTokenizer(br.readLine());
@@ -72,5 +65,7 @@ public class Boj18111 {
         }
 
         System.out.println(T + " " + H);
+
+        br.close();
     }
 }

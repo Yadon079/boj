@@ -1,4 +1,4 @@
-package boj;
+package boj.solved;
 
 import java.util.Scanner;
 
@@ -16,6 +16,8 @@ public class Boj1074 {
         c = sc.nextInt();
 
         count((int) Math.pow(2, n), 0, 0);
+
+        sc.close();
     }
 
     static void count(int n, int y, int x) {

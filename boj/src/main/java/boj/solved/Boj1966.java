@@ -1,4 +1,4 @@
-package boj;
+package boj.solved;
 
 import java.util.LinkedList;
 import java.util.Scanner;
