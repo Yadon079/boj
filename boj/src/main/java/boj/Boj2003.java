@@ -2,7 +2,7 @@ package boj;
 
 import java.util.Scanner;
 
-public class Boj12015 {
+public class Boj2003 {
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -33,6 +33,8 @@ public class Boj12015 {
         }
  
         System.out.println(count);
+
+        sc.close();
     }
     
 }
