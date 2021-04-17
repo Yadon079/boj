@@ -56,6 +56,8 @@ public class Boj3687_1 {
 			M = sc.nextInt();
 			System.out.println(minDp[M]+" "+maxDp[M]);
 		}
+
+		sc.close();
 	}
 
 }
