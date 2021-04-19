@@ -7,26 +7,36 @@ public class Boj13305 {
 
     public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
- 
-		int sum = Integer.MAX_VALUE;
-		StringTokenizer sub = new StringTokenizer(br.readLine(), "-");
- 
-		while(sub.hasMoreTokens()) {
-			int temp = 0;
- 
-			StringTokenizer add = new StringTokenizer(sub.nextToken(), "+");
-			
-			while(add.hasMoreTokens()) {
-				temp += Integer.parseInt(add.nextToken());
-			}
-			
-			if(sum == Integer.MAX_VALUE) {
-				sum = temp;
-			} else {
-				sum -= temp;
-			}
+		
+		int n = Integer.parseInt(br.readLine());
+		
+		long[] dist = new long[n - 1];
+		long[] cost = new long[n];
+		
+		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+        
+		for(int i = 0; i < n - 1; i++) {
+			dist[i] = Long.parseLong(st.nextToken());
 		}
+		
+		st = new StringTokenizer(br.readLine(), " ");
 
+		for(int i = 0; i < n; i++) {
+			cost[i] = Long.parseLong(st.nextToken());
+		}
+		
+		long sum = 0;
+		long minCost = cost[0];
+ 
+		for(int i = 0; i < n - 1; i++) {
+			if(cost[i] < minCost) {
+				minCost = cost[i];
+			}
+			
+			sum += (minCost * dist[i]);
+		}
+		
 		System.out.println(sum);
 	}
+
 }
